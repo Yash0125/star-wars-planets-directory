@@ -89,6 +89,14 @@ const Home = () => {
           </div>
         ))}
       </div>
+      <div className="pagination">
+        <button className="pagination-left" onClick={fetchPrevPage} disabled={!prevPage}>
+          Previous Page
+        </button>
+        <button className="pagination-right" onClick={fetchNextPage} disabled={!nextPage}>
+          Next Page
+        </button>
+      </div>
     </div>
   );
 };
