@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.home-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.home-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  margin-top: 2rem;
+  color: rgb(255, 219, 112);
+}
+
+.planets-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.planet-card {
+  background-color: #1e1e1f;
+  color: rgb(250, 250, 250);
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  height: 15rem;
+}
+
+.planet-title {
+  background-color: #1e1e1f;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32px;
+  color: rgb(255, 219, 112);
+}
+
+.planet-description-container {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.planet-description-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1e1e1f;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.planet-description-line p {
+  width: 50%;
+}
+
+.planet-description-line-left {
+  width: 50%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(255, 219, 112);
+  background-color: #1e1e1f;
+}
+.planet-description-line-terrain-left {
+  width: 47%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(255, 219, 112);
+  background-color: #1e1e1f;
+}
+
+.planet-description-line-right {
+  width: 50%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #1e1e1f;
+}
+.planet-description-line-terrain-right {
+  width: 53%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #1e1e1f;
+}
+
+.terrain-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #1e1e1f;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.terrain {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #1e1e1f;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: rgb(255, 219, 112);
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  margin: 5px;
+}
