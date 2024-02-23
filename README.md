@@ -13,10 +13,10 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sohan2410/swipe-assignment-frontend
+   git clone https://github.com/Yash0125/star-wars-planets-directory.git
 2. Navigate to the project directory:
     ```bash
-    cd swipe-assignment-frontend
+    cd star-wars-planets-directory
 3. Navigate to the project directory:
     ```bash
     npm install
