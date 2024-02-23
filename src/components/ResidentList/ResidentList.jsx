@@ -13,6 +13,7 @@ const ResidentList = ({ residentUrls, fetchResidents }) => {
     } else {
       setResidents(null); // Set residents to null when no resident URLs are available
     }
+    // eslint-disable-next-line 
   }, [residentUrls]);
 
   const handleNext = () => {
