@@ -77,6 +77,7 @@
   font-weight: 700;
   height: 40px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .resident-navigation-right {
@@ -88,4 +89,11 @@
   font-weight: 700;
   height: 40px;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+.resident-navigation-left:disabled,
+.resident-navigation-right:disabled {
+  background-color: #ccc;
+  cursor: not-allowed; 
 }

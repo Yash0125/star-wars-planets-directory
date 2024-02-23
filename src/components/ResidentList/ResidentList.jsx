@@ -68,10 +68,11 @@ const ResidentList = ({ residentUrls, fetchResidents }) => {
             <button
               className="resident-navigation-left"
               onClick={handlePrevious}
+              disabled={residents.length <= 1}
             >
               Left
             </button>
-            <button className="resident-navigation-right" onClick={handleNext}>
+            <button disabled={residents.length <= 1} className="resident-navigation-right" onClick={handleNext}>
               Right
             </button>
           </>
