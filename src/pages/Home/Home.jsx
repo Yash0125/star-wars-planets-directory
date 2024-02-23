@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
+import ResidentList from "../../components/ResidentList/ResidentList";
 
 const Home = () => {
   const [planets, setPlanets] = useState([]);
@@ -19,6 +20,32 @@ const Home = () => {
       setPrevPage(data.previous);
     } catch (error) {
       console.error("Error fetching planets:", error);
+    }
+  };
+
+  const fetchResidents = async (residentUrls) => {
+    try {
+      const residents = await Promise.all(
+        residentUrls.map((url) =>
+          fetch(url).then((response) => response.json())
+        )
+      );
+      return residents;
+    } catch (error) {
+      console.error("Error fetching residents:", error);
+      return [];
+    }
+  };
+
+  const fetchNextPage = () => {
+    if (nextPage) {
+      fetchPlanets(nextPage);
+    }
+  };
+
+  const fetchPrevPage = () => {
+    if (prevPage) {
+      fetchPlanets(prevPage);
     }
   };
 
@@ -55,10 +82,10 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="residents-container">
-              <h3 className="residents-title">Residents:</h3>
-              <ResidentList residentUrls={planet.residents} fetchResidents={fetchResidents} />
-            </div> */}
+            <ResidentList
+              residentUrls={planet.residents}
+              fetchResidents={fetchResidents}
+            />
           </div>
         ))}
       </div>

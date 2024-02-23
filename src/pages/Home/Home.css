@@ -32,7 +32,8 @@
   align-items: center;
   flex-direction: column;
   padding: 1rem;
-  height: 15rem;
+  height: 25rem;
+  width: 30rem;
 }
 
 .planet-title {
@@ -69,14 +70,7 @@
   color: rgb(255, 219, 112);
   background-color: #1e1e1f;
 }
-.planet-description-line-terrain-left {
-  width: 47%;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgb(255, 219, 112);
-  background-color: #1e1e1f;
-}
+
 
 .planet-description-line-right {
   width: 50%;
@@ -85,6 +79,14 @@
   line-height: 20px;
   background-color: #1e1e1f;
 }
+.planet-description-line-terrain-left {
+    width: 47%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(255, 219, 112);
+    background-color: #1e1e1f;
+  }
 .planet-description-line-terrain-right {
   width: 53%;
   font-weight: 300;
